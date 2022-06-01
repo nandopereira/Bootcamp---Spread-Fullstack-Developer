@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-wrapper{
+  display: flex;
+  align-items: center; 
+  justify-content: start; 
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone{
+  display: flex;
+  align-items: center; /*Alinha os itens no eixo y */
+  justify-content: center; /* alinha os itens no eixo x */
+  width: 50%;
+}
+
+.instagram-phone img{
+  height: 800px;
+}
+
+.instagram-continue{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+
+.group:nth-child(1){
+  min-height: 19rem;
+}
+
+.instagram-logo{
+  height: 3rem;
+}
+
+.profile-photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img{
+  height: 96px;
+}
+
+.instagram-login{
+  background-color: hsl(204, 100%, 48%);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout{
+  color: hsl(204, 100%, 48%);
+  margin-top: 16px;
+}
+
+.not-account{
+  color: hsl(0, 1%, 60%);
+}
+
+.link-blue{
+  color: hsl(204, 100%, 48%);
+}
+
+.get-the-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download{
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1){
+  background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+  background-image: url('./img/playstore-button.png');
+}
+
+@media (max-width:1250px){
+  .instagram-wrapper{
+    width: 80%;
+  }
+}
+
+/* media queries */
+
+@media (max-width:1024px){
+  .instagram-wrapper{
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px){
+  .instagram-wrapper{
+    width: 90%;
+  }
+
+  .instagram-phone{
+    display: none;
+  }
+
+  .instagram-continue{
+    width: 100%;
+  }
+
+  .group{
+    border: 1px solid transparent;
+  }
+  
+  body{
+    background-color: #fff;
+  }
+}
